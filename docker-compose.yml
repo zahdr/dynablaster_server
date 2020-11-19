@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  dynablaster_server:
+    build: dynablaster_server/.
+    restart: always
+    networks:
+      - dynablaster_server
+    ports:
+      - "6300:6300"
+    
+
+networks:
+  dynablaster_server:
+    
